@@ -8,7 +8,7 @@ const HeaderNav = () => {
   };
   return (
     <nav>
-      <div class="links">
+      <div className="links">
         <a href="https://facebook.com" target="blank">
           <i class="fa fa-facebook-f i-fb"></i>
         </a>

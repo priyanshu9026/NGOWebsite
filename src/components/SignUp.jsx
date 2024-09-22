@@ -16,7 +16,7 @@ const SignUp = ({ setUser, setcurrent }) => {
 
   const Register = async () => {
     console.log("D");
-    if (name == "" || username == "" || state == "") {
+    if (name === "" || username === "" || state === "") {
       alert("please fill all details");
     } else {
       console.log("Dd");
@@ -31,7 +31,7 @@ const SignUp = ({ setUser, setcurrent }) => {
         password: password,
       });
       var flag = true;
-      if (res.data.message == "fail") {
+      if (res.data.message === "fail") {
         console.log("True");
         flag = false;
         alert("unable to create userresponse");
@@ -40,7 +40,7 @@ const SignUp = ({ setUser, setcurrent }) => {
     }
   };
   const SignIN = async () => {
-    if (password == "" || username == "") {
+    if (password === "" || username === "") {
       alert("please fill all details");
     } else {
       const res = await axios.post(
